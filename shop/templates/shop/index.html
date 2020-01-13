@@ -11,7 +11,9 @@
     <tbody>
       {% for product in products %}
         <tr>
-          <td>{{product.name}}</td>
+          <td>
+            <a href="{% url 'product_detail' product.id %}">{{product.name}}</a>
+          </td>
           <td>{{product.category}}</td>
           <td>NGN {{product.price}}</td>
         </tr>
