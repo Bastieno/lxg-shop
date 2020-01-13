@@ -8,6 +8,8 @@ pylint = "*"
 
 [packages]
 django = "*"
+django-pylint = "*"
+django-tastypie = "*"
 
 [requires]
 python_version = "3.7"

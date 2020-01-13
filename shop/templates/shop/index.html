@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+  <table class="table table-bordered table-hover my-3">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for product in products %}
+        <tr>
+          <td>
+            <a href="{% url 'product_detail' product.id %}">{{product.name}}</a>
+          </td>
+          <td>{{product.category}}</td>
+          <td>NGN {{product.price}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock  %}
+
+
