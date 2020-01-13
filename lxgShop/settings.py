@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '6x$q77i$ijvt6c2kpnw!5_4k+rf6)6y1nbu(px*lbi&tq4b288'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://lxg-shop.herokuapp.com/']
+ALLOWED_HOSTS = ['lxg-shop.herokuapp.com']
 
 
 # Application definition
