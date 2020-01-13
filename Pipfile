@@ -8,8 +8,10 @@ pylint = "*"
 
 [packages]
 django = "*"
-django-pylint = "*"
 django-tastypie = "*"
+gunicorn = "*"
+pylint-django = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
